@@ -13,13 +13,13 @@ BeautifulSoup라이브러리를 이용하여서 크롤링 실습을 해보겠습
 
 먼저 웹페이지에서 크롤링을 하기 위해서는 <code>urllib</code>라이브러리를 이용합니다. <code>urllib</code>라이브러리는 파이썬에서 웹과 관련된 데이터를 쉽게 이용하게 도와주는 라이브러리입니다. 그 중에서 <code>request</code>모듈은 웹을 열어서 데이터를 읽어옵니다.
 
->import urllib.request
+<pre><code>import urllib.request
 form bs4 import BeautifulSoup
 
 url = "데이터를 가져 올 사이트 주소"
 req = urllib.request.Request(url)
 sourcecode = urllib.request.urlopen(url).read()
-soup = BeautifulSoup(sourcecode, "html.parser")
+soup = BeautifulSoup(sourcecode, "html.parser")</code></pre>
 
 
 웹에서 데이터를 가져올 준비가 되었습니다. 여기서 원하는 정보를 가져오기 위해서는 <code>find()</code> 또는 <code>find_all()</code>함수들을 이용합니다.
