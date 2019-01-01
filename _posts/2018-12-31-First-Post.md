@@ -1,5 +1,6 @@
 ---
 title: "Markup: Title *with* **Markdown**""
+layout: post
 ---
 
 # 주제 1
